@@ -1,0 +1,40 @@
+.card{
+    margin: 3rem 0;
+    &_content{
+        display: block;
+        margin: auto;
+        background: $very_dark_blue;
+        width: 62vw;
+        height: max-content;
+        padding: 3rem 2rem;
+        text-align: center;
+        color: white;
+        border-radius: 10px;
+        & > h1{
+            font-size: 1.7rem;
+            margin-bottom: 0.5rem;
+        }
+        & > span{
+            font-weight: 600;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 0.7rem;
+        }
+        & > p{
+            margin: 0 4rem;
+            letter-spacing: 0.3px;
+            font-size: 1.2rem;
+        }
+        & > a {
+            text-decoration: none;
+            display: block;
+            background-color: #5f61db;
+            width: 20rem;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            margin: 0 auto;
+            margin-top: 1.5rem;
+            color: $white;
+        }
+    }
+}

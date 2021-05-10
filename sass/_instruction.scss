@@ -1,0 +1,66 @@
+.instruction{
+    margin: 5rem 0;
+    text-align: center;
+    & > h1{
+        font-size: 2.5rem;
+        color: $very-dark-blue;
+        letter-spacing: 3px;
+    }
+    & > p{
+        font-size: 1.1rem;
+        color: $very-dark-blue;
+    }
+    &_container{
+        margin: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    &_div{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & > .line{
+            position: absolute;
+            width: 1.5px;
+            height: 70%;
+            left: 50%;
+            top: 65%;
+            background: $very_dark_blue;
+        }
+        &-img{
+            width: 30%;
+            height: 15rem;
+            background: $white;
+            margin: 2rem;
+        }
+        &-no{   
+            position: relative;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50px;
+            background: $dark_blue;
+            & > span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+            }
+        }
+        &-content{
+            text-align: left;
+            width: 30%;
+            margin: 2rem;
+            & > h2{
+                font-size: 1.5rem;
+                margin-bottom: 0.6rem;
+                color: $very_dark_blue;
+            }
+            & > p{
+                font-size: 1.2rem;
+                color: #3d3d3d;
+            }
+        }
+    }
+}

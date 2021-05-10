@@ -1,0 +1,272 @@
+.header{
+    height: 90vh;
+    background: $light_blue;
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &_left{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &_nav{
+            width: 100%;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $white;
+            &-link{
+                text-decoration: none;
+                color: $very-dark-blue;
+                font-size: 1.2rem;
+                font-weight: 500;
+                &--active{
+                    background: #31326f;
+                    color: white;
+                    padding: 0.5rem 1rem;
+                    border-radius: 30px;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        &-content{
+            text-align: center;
+            width: 80%;
+            &-top{
+                border: 1px solid $very-dark-blue;
+                border-radius: 12px;
+                height: 15rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                & > h1{
+                    font-size: 3.2rem;
+                    color: $very-dark-blue;
+                    letter-spacing: 3px;
+                }
+                & > p{
+                    color: $very-dark-blue;
+                    padding-top: 0.5rem;
+                    font-size: 1.1rem;
+                }
+            }
+            &-bottom{
+                margin-top: 0.7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & > i{
+                    margin-right: 0.5rem;
+                    color: $dark-blue;
+                    background: white;
+                    padding: 1rem;
+                    border-radius: 50px;
+                } 
+                & > p{
+                    color: $dark-blue;
+                    font-size: 1.1rem;
+                    letter-spacing: 0.3px;
+                }
+            }
+        }
+        &-toggle{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            & > div > div:last-of-type{
+                margin-left: 0.6rem;
+                & > span{
+                    font-size: 1.2rem;
+                    color: $very_dark_blue;
+                    font-weight: 500;
+                    line-height: 30px;
+                }
+                & > small{
+                    font-size: 1.1rem;
+                    color: $dark_blue;
+                    font-weight: 400;
+                    display: block;
+                }
+            }
+        }
+
+    }
+    &_right{
+        padding: 3rem 0;
+        border-radius: 16px;
+        background: $very_dark_blue;
+        width: 35%;
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &_img{
+            background: white;
+            width: 15rem;
+            height: 12rem;
+        }
+        & > button{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            background: $light_dark_blue;
+            border: none;
+            width: 18rem;
+            padding: 1rem 1.5rem;
+            color: white;
+            border-radius: 12px;
+            font-size: 1rem;
+            & > i {
+                transform: rotate(90deg);
+            }
+            & > p{
+                letter-spacing: 0.7px;
+            } 
+        }
+        & > .qr-code_container{
+            width: 18rem;
+            padding: 2rem;
+            background: $light_dark_blue;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            & > i{
+                font-size: 2rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        & > .toggle-button{
+            & > div{
+                margin-left: 0.6rem;
+                & > p {
+                    color: white;
+                }
+            }
+        }
+        &-btns{
+            & > button{
+                padding: 1rem 2.5rem;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 30px;
+                &:first-child{
+                    background: $yellow;
+                }
+                &:last-child{
+                    background: $dark_blue;
+                }
+            }
+        }
+    }
+}
+
+
+// Toggle btn
+.toggle-button{
+    display: flex;
+    align-items: center;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch-2{
+    width: 40px;
+    height: 25px;
+}
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $white;
+    transition: .4s;
+    border: 2px solid $very_dark_blue;
+  }
+  .switch-2 > .slider{
+    border: 2px solid $light_dark_blue;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    transition: .4s;
+    background: $very_dark_blue;
+  }
+  .switch-2 > .slider::before{
+    height: 15px;
+    width: 15px;
+    background: $light_dark_blue;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .switch-2 > input:checked + .slider:before {
+    transform: translateX(15px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
