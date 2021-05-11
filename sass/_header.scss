@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    @media(min-height: 900px){
+        height: 85vh;
+        padding: 5rem 3rem;
+    }
     &_left{
         width: 60%;
         height: 100%;
@@ -21,17 +25,26 @@
             justify-content: space-between;
             align-items: center;
             background: $white;
+            @media(min-height: 900px){
+                padding: 1.5em 2rem;
+            }
             &-link{
                 text-decoration: none;
                 color: $very-dark-blue;
                 font-size: 1.2rem;
                 font-weight: 500;
+                @media(min-height: 900px){
+                    font-size: 1.5rem;
+                }
                 &--active{
                     background: #31326f;
                     color: white;
                     padding: 0.5rem 1rem;
                     border-radius: 30px;
                     font-size: 1rem;
+                    @media(min-height: 900px){
+                        font-size: 1.7rem;
+                    }
                 }
             }
         }
@@ -47,15 +60,24 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                @media(min-height: 900px){
+                    height: 20rem;
+                }
                 & > h1{
                     font-size: 3.2rem;
                     color: $very-dark-blue;
                     letter-spacing: 3px;
+                    @media(min-height: 900px){
+                        font-size: 3.5rem;
+                    }
                 }
                 & > p{
                     color: $very-dark-blue;
                     padding-top: 0.5rem;
                     font-size: 1.1rem;
+                    @media(min-height: 900px){
+                        font-size: 1.3rem;
+                    }
                 }
             }
             &-bottom{
@@ -75,6 +97,9 @@
                     color: $dark-blue;
                     font-size: 1.1rem;
                     letter-spacing: 0.3px;
+                    @media(min-height: 900px){
+                        font-size: 1.4rem;
+                    }
                 }
             }
         }
@@ -82,6 +107,9 @@
             width: 70%;
             display: flex;
             justify-content: space-between;
+            @media(min-height: 900px){
+                width: 80%;
+            }
             & > div > div:last-of-type{
                 margin-left: 0.6rem;
                 & > span{
@@ -89,12 +117,18 @@
                     color: $very_dark_blue;
                     font-weight: 500;
                     line-height: 30px;
+                    @media(min-height: 900px){
+                        font-size: 1.4rem;
+                    }
                 }
                 & > small{
                     font-size: 1.1rem;
                     color: $dark_blue;
                     font-weight: 400;
                     display: block;
+                    @media(min-height: 900px){
+                        font-size: 1.3rem;
+                    }
                 }
             }
         }
@@ -110,6 +144,10 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        @media(min-height: 900px){
+            width: 33%;
+            height: 105%;
+        }
         &_img{
             background: white;
             width: 15rem;
@@ -120,13 +158,16 @@
             justify-content: space-between;
             align-items: center;
             text-decoration: none;
-            background: $light_dark_blue;
+            background-color: $light_dark_blue;
             border: none;
-            width: 18rem;
+            width: 70%;
             padding: 1rem 1.5rem;
             color: white;
             border-radius: 12px;
             font-size: 1rem;
+            @media(min-height: 900px){
+                font-size: 1.3rem;
+            }
             & > i {
                 transform: rotate(90deg);
             }
@@ -135,7 +176,7 @@
             } 
         }
         & > .qr-code_container{
-            width: 18rem;
+            width: 70%;
             padding: 2rem;
             background: $light_dark_blue;
             border-radius: 12px;
@@ -162,6 +203,9 @@
                 outline: none;
                 cursor: pointer;
                 border-radius: 30px;
+                @media(min-height: 900px){
+                    padding: 1.3rem 3.5rem;
+                }
                 &:first-child{
                     background: $yellow;
                 }

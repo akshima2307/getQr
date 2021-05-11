@@ -9,6 +9,8 @@
     & > p{
         font-size: 1.1rem;
         color: $very-dark-blue;
+        line-height: 30px;
+        letter-spacing: 0.4px;
     }
     &_container{
         margin: 3rem 5rem;
@@ -60,6 +62,8 @@
             & > p{
                 font-size: 1.2rem;
                 color: #3d3d3d;
+                line-height: 30px;
+                letter-spacing: 0.4px;
             }
         }
     }

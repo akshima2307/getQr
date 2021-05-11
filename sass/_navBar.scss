@@ -2,8 +2,8 @@
 $yellow: #ffc93c;
 $light_blue: #dbf6e9;
 $dark_blue: #63cef8;
-$very_dark_blue: #4a4caf;
-$light_dark_blue: #5f61db;
+$very_dark_blue: #060199;
+$light_dark_blue: rgb(11, 4, 207); 
 $white: #ffffff;
 
 
@@ -17,6 +17,9 @@ $white: #ffffff;
 body{
     font-family: 'Raleway', sans-serif;
     background-color: $light_blue;
+    @media(min-height: 900px){
+        font-size: 130% !important;
+    }
 }
 .nav{
     padding: 0 3rem;
@@ -24,6 +27,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media(min-height: 900px){
+        height: 15vh;
+    }
     & > h3{
         font-family: 'Oswald', sans-serif;
         font-size: 2rem;
@@ -38,8 +44,10 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media(min-height: 900px){
+            width: 20%;
+        }
         &-btn{
-            border-radius: 8px;
             font-size: 0.9rem;
             background-color: $very-dark-blue;
             color: $white;
@@ -48,6 +56,10 @@ body{
             outline: none;
             padding: 1rem 2rem;
             cursor: pointer;
+            @media(min-height: 900px){
+                font-size: 1.3rem;
+                padding: 1.3rem 3rem;
+            }
         }
         &-icon{
             position: relative;
@@ -55,6 +67,10 @@ body{
             width: 3rem;
             height: 3px;
             background: #3d3d3d;
+            @media(min-height: 900px){
+                width: 4rem;
+                height: 4px;
+            }
             &::before{
                 content: " ";
                 position: absolute;
@@ -63,6 +79,10 @@ body{
                 width: 3rem;
                 height: 3px;
                 background-color: #3d3d3d;
+                @media(min-height: 900px){
+                    width: 4rem;
+                    height: 4px;
+                }
             }
             &::after{
                 content: " ";
@@ -72,6 +92,10 @@ body{
                 width: 3rem;
                 height: 3px;
                 background-color: #3d3d3d;
+                @media(min-height: 900px){
+                    width: 4rem;
+                    height: 4px;
+                }
             }
         }
     }
