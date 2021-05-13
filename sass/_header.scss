@@ -10,7 +10,7 @@
         padding: 5rem 3rem;
     }
     &_left{
-        width: 60%;
+        width: 65%;
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -26,7 +26,7 @@
             align-items: center;
             background: $white;
             @media(min-height: 900px){
-                padding: 1.5em 2rem;
+                padding: 1.5rem;
             }
             &-link{
                 text-decoration: none;
@@ -37,7 +37,7 @@
                     font-size: 1.5rem;
                 }
                 &--active{
-                    background: #31326f;
+                    background: $very_dark_blue;
                     color: white;
                     padding: 0.5rem 1rem;
                     border-radius: 30px;
@@ -52,19 +52,29 @@
         &-content{
             text-align: center;
             width: 80%;
+            height: 75%;
             &-top{
-                border: 1px solid $very-dark-blue;
-                border-radius: 12px;
+                position: relative;
                 height: 15rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                padding-top: 2rem;
+                padding-left: 2rem;
+                border-radius: 12px;
+                border: 1px solid $very-dark-blue;
                 @media(min-height: 900px){
                     height: 20rem;
                 }
-                & > h1{
-                    font-size: 3.2rem;
+                & > textarea{
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 3rem;
+                    color: $very_dark_blue;
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                }
+                & > textarea::placeholder{
+                    font-size: 3rem;
                     color: $very-dark-blue;
                     letter-spacing: 3px;
                     @media(min-height: 900px){
@@ -72,9 +82,13 @@
                     }
                 }
                 & > p{
+                    position: absolute;
+                    top: 43%;
+                    left: 21%;
+                    transform: translate(-43%, -21%);
                     color: $very-dark-blue;
                     padding-top: 0.5rem;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     @media(min-height: 900px){
                         font-size: 1.3rem;
                     }
@@ -104,7 +118,8 @@
             }
         }
         &-toggle{
-            width: 70%;
+            margin-top: 3rem;
+            width: 100%;
             display: flex;
             justify-content: space-between;
             @media(min-height: 900px){
@@ -112,6 +127,7 @@
             }
             & > div > div:last-of-type{
                 margin-left: 0.6rem;
+                text-align: left;
                 & > span{
                     font-size: 1.2rem;
                     color: $very_dark_blue;
@@ -138,14 +154,13 @@
         padding: 3rem 0;
         border-radius: 16px;
         background: $very_dark_blue;
-        width: 35%;
+        width: 30%;
         height: 110%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         @media(min-height: 900px){
-            width: 33%;
             height: 105%;
         }
         &_img{
@@ -197,12 +212,18 @@
             }
         }
         &-btns{
+            width: 80%;
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
             & > button{
                 padding: 1rem 2.5rem;
                 border: none;
                 outline: none;
                 cursor: pointer;
                 border-radius: 30px;
+                font-size: 1.1rem;
                 @media(min-height: 900px){
                     padding: 1.3rem 3.5rem;
                 }
@@ -285,6 +306,147 @@
     border-radius: 50%;
   }
 
+.tab_content{
+    height: 80%;
+    width: 100%;
+    margin-left: 2rem;
+    display: none !important;
+    @media(min-height: 900px){
+        height: 75%;
+    }
+    &--active{
+        display: block !important;
+    }
+
+    // form
+    & > h1{
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $very_dark_blue;
+    }
+    & > .form{
+        margin: 3rem 0;  
+    }
+    .form_group{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+    .form_label{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #3d3d3d;
+    }
+    .form_input{
+        width: 70%;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border: none;
+        outline: none;
+    }
+    .form_textarea{
+        width: 70%;
+        height: 6rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border: none;
+        outline: none;
+    }
+    .form_btn{
+        background: $very_dark_blue;
+        color: white;
+        border: none;
+        outline: none;
+        padding: 1rem 3rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border-radius: 12px;
+        margin-top: 2rem;
+        cursor: pointer;
+        &:hover{
+            background: $light_dark_blue;
+        }
+    }
+    .radio_inputs{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .radio_label{
+        font-size: 1.1rem;
+    }
+    &-2{
+        & > h1{
+            font-size: 3rem;
+            font-weight: 600;
+            color: $very_dark_blue;
+        }
+        & > p{
+            font-size: 1.4rem;
+            color: $very_dark_blue;
+            display: block;
+            margin-top: 1rem;
+        }
+        & > button{
+            background: $very_dark_blue;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-top: 6rem;
+            cursor: pointer;
+            &:hover{
+                background: $light_dark_blue;
+            }
+        }
+    }
+    // Tab-3
+    &-3{
+        & > h1{
+            font-size: 3rem;
+            font-weight: 600;
+            color: $very_dark_blue;
+        }
+        & > p{
+            font-size: 1.3rem;
+            color: $very_dark_blue;
+            display: block;
+            margin-top: 1rem;
+        }
+        & > button{
+            background: $very_dark_blue;
+            color: white;
+            border: none;
+            outline: none;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-top: 6rem;
+            cursor: pointer;
+            &:hover{
+                background: $light_dark_blue;
+            }
+        }
+    }
+
+    // Tab-8
+    
+
+    // Tab 9
+    &-8{
+        & > h1{
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: $very_dark_blue;
+        }
+    }
+}
 
 
 
