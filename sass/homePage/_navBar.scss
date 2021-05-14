@@ -5,6 +5,17 @@ $dark_blue: #63cef8;
 $very_dark_blue: #060199;
 $light_dark_blue: rgb(11, 4, 207); 
 $white: #ffffff;
+$Grey-light-1: #faf9f9;
+$Grey-light-2: #f4f2f2;
+$Grey-light-3: #f0eeee;
+$Grey-light-4: #ccc;
+
+$Grey-dark-1: #333;
+$Grey-dark-2: #777;
+$Grey-dark-3: #999;
+
+$shadow-dark:0 1rem 4rem rgba(11,4,207,.2);
+$shadow-light:0 1rem 4rem rgba(11,4,207,.1);
 
 
 
@@ -48,9 +59,11 @@ body{
             width: 20%;
         }
         &-btn{
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             background-color: $very-dark-blue;
             color: $white;
+            text-decoration: none;
+            font-weight: 600;
             border-radius: 12px;
             border: none;
             outline: none;

@@ -1,6 +1,10 @@
-@import './navBar';
-@import './header';
-@import './card';
-@import './instruction';
-@import './info';
-@import './faq';
+@import './homePage/navBar';
+@import './homePage/header';
+@import './homePage/card';
+@import './homePage/faq';
+@import './homePage/info';
+@import './homePage/instruction';
+
+@import './dashBoard/tabs';
+@import './dashBoard/dashHeader';
+@import './dashBoard/qrInfo';
