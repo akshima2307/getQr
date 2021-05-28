@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetQr</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- font Awsome -->
+    <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="qrtype_nav">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </div>
+
+    <section class="social_container">
+        <div class="social_container-left">
+            <div class="qrname">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <input type="text" placeholder="Name your Qr Code">
+            </div>
+            <div class="social_form">
+                <ul>
+                    <li>
+                        <input type="checkbox" >
+                        <i></i>
+                        <h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Design & Customizations</h2>
+                        <form action="" class="design_form">
+                            <div class="form_group">
+                                <p>Choose a color theme and upload an image for your social media page</p>
+                                <div class="form_group-color">
+                                    <label for=""><i class="fa fa-paint-brush" aria-hidden="true"></i> Color: </label>
+                                    <div class="Primary_color">
+                                        <small>Primary</small>
+                                        <span class="color-picker">
+                                            <label for="Primary">
+                                                <input type="color" value="#9231d3" id="Primary">
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <div class="Primary_color">
+                                        <small>Button</small>
+                                        <span class="color-picker">
+                                            <label for="Button">
+                                                <input type="color" value="#8f3f3f" id="Button">
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <p>Choose image from templates or upload an image <input type="file"></p>
+                                <div class="form_group-image">
+                                    <div>
+                                        <img src="../img/SL_011521_39830_13.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="../img/SL_011521_39830_15.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </form>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <i></i>
+                      <h2><i class="fa fa-info-circle" aria-hidden="true"></i> Basic Information</h2>
+                      <form class="basic_info" action="">
+                        <p>Field marked with * are required information</p>
+                        <div class="form_group">
+                            <label for="heading">Headline*</label>
+                            <input type="text" value="Connect with us on social media" id="heading" required>
+                        </div>
+                        <div class="form_group">
+                            <label for="">About us</label>
+                            <input type="text" value="Follow us and get updates delivered to your favorite social media channel.">
+                        </div>
+                      </form>
+                    </li>
+                    <li>
+                      <input type="checkbox">
+                      <i></i>
+                      <h2><i class="fa fa-comments" aria-hidden="true"></i> Social Media Channels</h2>
+                      <form action="" class="links_form">
+                          <p>
+                            Add your username or links of social media below.   
+                          </p>
+                          <div class="form_group">
+                            <span>Website</span>
+                            <div>
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                <div>
+                                    <div>
+                                        <label for="wlink">URL</label>
+                                        <input type="text" value="www.your-website.com" id="wlink">
+                                    </div>
+                                    <div>
+                                        <label for="wtext">Text</label>
+                                        <input type="text" value="Visit us online" id="wtext">
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                          </div>
+                          <div class="form_group">
+                            <span>Facebook</span>
+                            <div>
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <div>
+                                    <div>
+                                        <label for="flink">URL</label>
+                                        <input type="text" placeholder="www.facebook.com/page" id="flink">
+                                    </div>
+                                    <div>
+                                        <label for="ftext">Text</label>
+                                        <input type="text" value="Become a fan" id="ftext">
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                          </div>
+                          <div class="form_group">
+                            <span>YouTube</span>
+                            <div>
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                <div>
+                                    <div>
+                                        <label for="ylink">URL</label>
+                                        <input type="text" placeholder="www.youtube.com/page" id="ylink">
+                                    </div>
+                                    <div>
+                                        <label for="ytext">Text</label>
+                                        <input type="text" value="Watch our videos" id="ytext">
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                          </div>
+                          <div class="form_group-channel">
+                            <span>Add more </span>
+                            <div>
+                                <small>Click on the icon to add a social media profile.</small>
+                                <div>
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                          </div>
+                      </form>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <h2><i class="fa fa-cog" aria-hidden="true"></i> Advance option</h2>
+                        <form action="" class="option_form">
+                            <div class="form_group">
+                                <span>Sharing</span>
+                                <div>
+                                    <input type="radio">
+                                    <label for="check">Add a share button to the page.</label>
+                                </div>
+                            </div>
+                        </form>
+                      </li>
+                    
+                  </ul>
+            </div>
+        </div>
+        <div class="social_container-right">
+            <div class="phone">
+                <div class="phone_screen">
+                    <img src="../img/SL_011521_39830_13.jpg" alt="">
+                    <div class="phone_screen-header">
+                        <h3>Connect with us on social media</h3>
+                        <p>Follow us and get updates delivered to your favorite social media channel</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <div>
+                                <p>www.your-website.com</p>
+                                <small>Visit us online</small>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <div>
+                                <p>www.facebook.com/page</p>
+                                <small>Become a fan</small>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            <div>
+                                <p>www.youtube.com/page</p>
+                                <small>Watch our videos</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('input[type=color]').forEach(function(picker) {
+
+        var targetLabel = document.querySelector('label[for="' + picker.id + '"]'),
+        codeArea = document.createElement('span');
+
+        codeArea.innerHTML = picker.value;
+        targetLabel.appendChild(codeArea);
+
+        picker.addEventListener('change', function() {
+        codeArea.innerHTML = picker.value;
+        targetLabel.appendChild(codeArea);
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,6 +1,5 @@
 .header{
     height: 90vh;
-    background: $light_blue;
     padding: 4rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -24,21 +23,22 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: $white;
+            background: $very_dark_blue;
+            box-shadow: $shadow-light;
             @media(min-height: 900px){
                 padding: 1.5rem;
             }
             &-link{
                 text-decoration: none;
-                color: $very-dark-blue;
+                color: $white;
                 font-size: 1.2rem;
                 font-weight: 500;
                 @media(min-height: 900px){
                     font-size: 1.5rem;
                 }
                 &--active{
-                    background: $very_dark_blue;
-                    color: white;
+                    background: $white;
+                    color: $very_dark_blue;
                     padding: 0.5rem 1rem;
                     border-radius: 30px;
                     font-size: 1rem;
@@ -164,9 +164,9 @@
             height: 105%;
         }
         &_img{
-            background: white;
             width: 15rem;
             height: 12rem;
+            object-fit: contain;
         }
         & > button{
             display: flex;
@@ -285,31 +285,30 @@
     transition: .4s;
     background: $very_dark_blue;
   }
-  .switch-2 > .slider::before{
+.switch-2 > .slider::before{
     height: 15px;
     width: 15px;
     background: $light_dark_blue;
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     transform: translateX(26px);
-  }
-  .switch-2 > input:checked + .slider:before {
+}
+.switch-2 > input:checked + .slider:before {
     transform: translateX(15px);
-  }
+}
   
-  .slider.round {
+.slider.round {
     border-radius: 34px;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
 .tab_content{
     height: 80%;
     width: 100%;
-    margin-left: 2rem;
     display: none !important;
     @media(min-height: 900px){
         height: 75%;

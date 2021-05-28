@@ -20,219 +20,300 @@
     <title>GetQr</title>
 </head>
 <body>
-    <header class="dashheader">
-        <h3 class="dashheader_logo">
-            GET
-            <i class="fa fa-qrcode" aria-hidden="true"></i>    
-            QR
-        </h3>
-
-        <div class="dashheader_user">
-            <i class="fa fa-bell-o" aria-hidden="true"></i>
-            <i class="fa fa-question" aria-hidden="true"></i>
+    <section class="qrtype">
+        <div class="qrtype_nav">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <div class="qrtype_searchbar">
+            <h2>Search your QR Code type</h2>
             <div>
-                <i class="fa fa-user-o" aria-hidden="true"></i>
-                <span>USER</span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" name="" id="" placeholder="Or select your industry for recommendations">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
             </div>
         </div>
-    </header>
-    <div class="dashtabs">
-        <div class="dashtabs_sidebar">
-            <input type="text" placeholder="Search..." name="" id="">
-            <span>My QR Codes</span>
-            <li class="dashtabs_btn dashtabs_btn--active" data-for-tab = "1"><i class="fa fa-bars" aria-hidden="true"></i>All</li>
-            <li class="dashtabs_btn" data-for-tab = "2"><i class="fa fa-bolt" aria-hidden="true"></i>Active</li>
-            <li class="dashtabs_btn" data-for-tab = "3"><i class="fa fa-pause" aria-hidden="true"></i>Pause</li>
-            <span>My Folders</span>
-            <li class="dashtabs_btn" data-for-tab = "4"><i class="fa fa-folder" aria-hidden="true"></i> New Folder</li>
-        </div>  
+        <span class="qrtype_span">Dynamic Codes</span>
+        <div class="qrtype_categories">
+            <a class="qrtype_category" href="#website">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <h4>Website</h4>
+                <small>Link to any page on the web</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#social-media">
+                <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                <h4>Social Media</h4>
+                <small>Share coupons and discounts</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#vcard">
+                <i class="fa fa-address-card" aria-hidden="true"></i>
+                <h4>vCard Plus</h4>
+                <small>Share personalized contact details</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#business">
+                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                <h4>Business Page</h4>
+                <small>Provide your company information</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#feedback">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <h4>Feedback</h4>
+                <small>Collect feedback and get rated</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#rating">
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <h4>Rating</h4>
+                <small>Ask a question and get rated</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#video">
+                <i class="fa fa-file-video-o" aria-hidden="true"></i>
+                <h4>Video</h4>
+                <small>Share one or more videos</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#events">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                <h4>Event</h4>
+                <small>Promote your event</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#pdf">
+                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                <h4>PDF</h4>
+                <small>Link to a mobile-optimized PDF</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#facebook">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <h4>Facebook</h4>
+                <small>Get more Likes for your page</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#app">
+                <i class="fa fa-font" aria-hidden="true"></i>
+                <h4>App</h4>
+                <small>View your app on various App Stores</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#mp3">
+                <i class="fa fa-file-audio-o" aria-hidden="true"></i>
+                <h4>MP3</h4>
+                <small>Play an audio file</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#img">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <h4>Images</h4>
+                <small>Show a series of photos</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+            <a class="qrtype_category" href="#coupons">
+                <i class="fa fa-percent" aria-hidden="true"></i>
+                <h4>Coupons</h4>
+                <small>Share coupons and discounts</small>
+                <i class="fa fa-check-square-o check" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="qrtype_btn"><a href="#" class="qrtype_a">NEXT <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+    </section>
 
-        <div class="dashtabs_content dashtabs_content--active dashtabs_content-1" data-tab = "1">
-            <div class="dashtabs_content_nav">
-                <span class="heading">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                    All QR Codes
-                </span>       
-                <div class="btns">
-                    <button>
-                        Last Created
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </button>
-                    <button>
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        Create QR Code
-                    </button>
+
+
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+        <header class="dashheader">
+            <h3 class="dashheader_logo">
+                GET
+                <i class="fa fa-qrcode" aria-hidden="true"></i>    
+                QR
+            </h3>
+
+            <div class="dashheader_user">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <i class="fa fa-question" aria-hidden="true"></i>
+                <div>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span>USER</span>
                 </div>
             </div>
+        </header>
+        <div class="dashtabs">
+            <div class="dashtabs_sidebar">
+                <input type="text" placeholder="Search..." name="" id="">
+                <span>My QR Codes</span>
+                <li class="dashtabs_btn dashtabs_btn--active" data-for-tab = "1"><i class="fa fa-bars" aria-hidden="true"></i>All</li>
+                <li class="dashtabs_btn" data-for-tab = "2"><i class="fa fa-bolt" aria-hidden="true"></i>Active</li>
+                <li class="dashtabs_btn" data-for-tab = "3"><i class="fa fa-pause" aria-hidden="true"></i>Pause</li>
+                <span>My Folders</span>
+                <li class="dashtabs_btn" data-for-tab = "4"><i class="fa fa-folder" aria-hidden="true"></i> New Folder</li>
+            </div>  
 
-            <div class="QRInfo">
-                <div class="QRInfo_1">
-                    <span>Website</span>
-                    <h3><i class="fa fa-globe" aria-hidden="true"></i>https://xyz.com</h3>
-                    <div>
-                        <span><i class="fa fa-folder" aria-hidden="true"></i>No Folder</span>
-                        <span><i class="fa fa-paperclip" aria-hidden="true"></i>qrcode/1234</span>
-                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>May 14, 2021</span>
-                        <span><i class="fa fa-arrow-right" aria-hidden="true"></i>xyz.com</span>
-                    </div>
-                </div>
-                <div class="QRInfo_2">
-                    <div>
-                        <p>
-                            <span>0</span>
-                            <small>Scans</small>
-                        </p>
+            <div class="dashtabs_content dashtabs_content--active dashtabs_content-1" data-tab = "1">
+                <div class="dashtabs_content_nav">
+                    <span class="heading">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        All QR Codes
+                    </span>       
+                    <div class="btns">
                         <button>
-                            Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            Last Created
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <button>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Create QR Code
                         </button>
                     </div>
-                    <div>
-                        <img src="https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account13631348/qrcodes/32899246.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20210514%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T131016Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=82f97c0ffdeebf40bc5fae94ef28a7387017f0e29db5f8d3c3f958b027d1883b" alt="">
+                </div>
+
+                <div class="QRInfo">
+                    <div class="QRInfo_1">
+                        <span>Website</span>
+                        <h3><i class="fa fa-globe" aria-hidden="true"></i>https://xyz.com</h3>
+                        <div>
+                            <span><i class="fa fa-folder" aria-hidden="true"></i>No Folder</span>
+                            <span><i class="fa fa-paperclip" aria-hidden="true"></i>qrcode/1234</span>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>May 14, 2021</span>
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i>xyz.com</span>
+                        </div>
                     </div>
-                </div>
-                <div class="QRInfo_3">
-                    <button>
-                        Download
-                    </button>
-                </div>
-            </div>
-            <div class="QRInfo">
-                <div class="QRInfo_1">
-                    <span>Website</span>
-                    <h3><i class="fa fa-globe" aria-hidden="true"></i>https://xyz.com</h3>
-                    <div>
-                        <span><i class="fa fa-folder" aria-hidden="true"></i>No Folder</span>
-                        <span><i class="fa fa-paperclip" aria-hidden="true"></i>qrcode/1234</span>
-                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>May 14, 2021</span>
-                        <span><i class="fa fa-arrow-right" aria-hidden="true"></i>xyz.com</span>
+                    <div class="QRInfo_2">
+                        <div>
+                            <p>
+                                <span>0</span>
+                                <small>Scans</small>
+                            </p>
+                            <button>
+                                Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <img src="https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account13631348/qrcodes/32899246.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20210514%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T131016Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=82f97c0ffdeebf40bc5fae94ef28a7387017f0e29db5f8d3c3f958b027d1883b" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="QRInfo_2">
-                    <div>
-                        <p>
-                            <span>1</span>
-                            <small>Scans</small>
-                        </p>
+                    <div class="QRInfo_3">
                         <button>
-                            Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            Download
                         </button>
                     </div>
-                    <div>
-                        <img src="https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account13631348/qrcodes/32899246.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20210514%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T131016Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=82f97c0ffdeebf40bc5fae94ef28a7387017f0e29db5f8d3c3f958b027d1883b" alt="">
+                </div>
+                <div class="QRInfo">
+                    <div class="QRInfo_1">
+                        <span>Website</span>
+                        <h3><i class="fa fa-globe" aria-hidden="true"></i>https://xyz.com</h3>
+                        <div>
+                            <span><i class="fa fa-folder" aria-hidden="true"></i>No Folder</span>
+                            <span><i class="fa fa-paperclip" aria-hidden="true"></i>qrcode/1234</span>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>May 14, 2021</span>
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i>xyz.com</span>
+                        </div>
                     </div>
-                </div>
-                <div class="QRInfo_3">
-                    <button>
-                        Download
-                    </button>
-                </div>
-            </div>
-            
-        </div>
-        <div class="dashtabs_content dashtabs_content-2" data-tab = "2">
-            <div class="dashtabs_content_nav">
-                <span class="heading">
-                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                    Active QR Codes
-                </span>       
-                <div class="btns">
-                    <button>
-                        Last Created
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </button>
-                    <button>
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        Create QR Code
-                    </button>
-                </div>
-            </div>
-
-            <div class="QRInfo">
-                <div class="QRInfo_1">
-                    <span>Website</span>
-                    <h3><i class="fa fa-globe" aria-hidden="true"></i>https://xyz.com</h3>
-                    <div>
-                        <span><i class="fa fa-folder" aria-hidden="true"></i>No Folder</span>
-                        <span><i class="fa fa-paperclip" aria-hidden="true"></i>qrcode/1234</span>
-                        <span><i class="fa fa-clock-o" aria-hidden="true"></i>May 14, 2021</span>
-                        <span><i class="fa fa-arrow-right" aria-hidden="true"></i>xyz.com</span>
+                    <div class="QRInfo_2">
+                        <div>
+                            <p>
+                                <span>1</span>
+                                <small>Scans</small>
+                            </p>
+                            <button>
+                                Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <img src="https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account13631348/qrcodes/32899246.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20210514%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T131016Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=82f97c0ffdeebf40bc5fae94ef28a7387017f0e29db5f8d3c3f958b027d1883b" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="QRInfo_2">
-                    <div>
-                        <p>
-                            <span>1</span>
-                            <small>Scans</small>
-                        </p>
+                    <div class="QRInfo_3">
                         <button>
-                            Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            Download
                         </button>
                     </div>
-                    <div>
-                        <img src="https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account13631348/qrcodes/32899246.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20210514%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210514T131016Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=82f97c0ffdeebf40bc5fae94ef28a7387017f0e29db5f8d3c3f958b027d1883b" alt="">
-                    </div>
                 </div>
-                <div class="QRInfo_3">
-                    <button>
-                        Download
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="dashtabs_content dashtabs_content-3" data-tab = "3">
-            <div class="dashtabs_content_nav">
-                <span class="heading">
-                    <i class="fa fa-pause" aria-hidden="true"></i>
-                    Paused QR Code
-                </span>       
-                <div class="btns">
-                    <button>
-                        Last Created
-                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                    </button>
-                    <button>
-                        <i class="fa fa-plus" aria-hidden="true"></i>
-                        Create QR Code
-                    </button>
-                </div>
-            </div>
-
-            <div class="no_content">
-                <i class="fa fa-pause" aria-hidden="true"></i>
-                <h1>There are no paused QR Codes</h1>
-            </div>
-        </div>
-        <div class="dashtabs_content dashtabs_content-4" data-tab = "4">
-        </div>
-        <div class="dashtabs_content dashtabs_content-5" data-tab = "5">
-        </div>
-        <div class="dashtabs_content dashtabs_content-6" data-tab = "6">
-        </div>
-
-    </div>
-    <script>
-        function setUpTabs(){
-            document.querySelectorAll('.dashtabs_btn').forEach(button => {
-                button.addEventListener('click', () =>{
-                    console.log("Hello");
-                    const sideBar = button.parentElement;
-                    const dashtabsContainer = sideBar.parentElement;
-                    const dashtabNumber = button.dataset.forTab;
-                    const tabToActivate = dashtabsContainer.querySelector(`.dashtabs_content[data-tab="${dashtabNumber}"]`);
-
                 
-                    sideBar.querySelectorAll('.dashtabs_btn').forEach(btn => {
-                        btn.classList.remove('dashtabs_btn--active');
-                    });
-                    dashtabsContainer.querySelectorAll('.dashtabs_content').forEach(content => {
-                        content.classList.remove('dashtabs_content--active');
-                    });
-                    button.classList.add('dashtabs_btn--active');
-                    tabToActivate.classList.add('dashtabs_content--active');
-                });
-            });
-        }
-        setUpTabs();
-    </script>
+            </div>
+            <div class="dashtabs_content dashtabs_content-2" data-tab = "2">
+                <div class="dashtabs_content_nav">
+                    <span class="heading">
+                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                        Active QR Codes
+                    </span>       
+                    <div class="btns">
+                        <button>
+                            Last Created
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <button>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Create QR Code
+                        </button>
+                    </div>
+                </div>
+
+                <div class="QRInfo">
+                    <div class="QRInfo_1">
+                        <span>Website</span>
+                        <h3><i class="fa fa-globe" aria-hidden="true"></i>https://xyz.com</h3>
+                        <div>
+                            <span><i class="fa fa-folder" aria-hidden="true"></i>No Folder</span>
+                            <span><i class="fa fa-paperclip" aria-hidden="true"></i>qrcode/1234</span>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>May 14, 2021</span>
+                            <span><i class="fa fa-arrow-right" aria-hidden="true"></i>xyz.com</span>
+                        </div>
+                    </div>
+                    <div class="QRInfo_2">
+                        <div>
+                            <p>
+                                <span>1</span>
+                                <small>Scans</small>
+                            </p>
+                            <button>
+                                Details <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <img src="https://qrcgcustomers.s3.eu-west-1.amazonaws.com/account13631348/qrcodes/32899246.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJB2HRMXMYBGR2KIQ%2F20210523%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210523T081600Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=a99b90eb489df89047b503ff1be4d49288494d3b0568f2472a1822b1b9445035" alt="">
+                        </div>
+                    </div>
+                    <div class="QRInfo_3">
+                        <button>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="dashtabs_content dashtabs_content-3" data-tab = "3">
+                <div class="dashtabs_content_nav">
+                    <span class="heading">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                        Paused QR Code
+                    </span>       
+                    <div class="btns">
+                        <button>
+                            Last Created
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <button>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                            Create QR Code
+                        </button>
+                    </div>
+                </div>
+
+                <div class="no_content">
+                    <i class="fa fa-pause" aria-hidden="true"></i>
+                    <h1>There are no paused QR Codes</h1>
+                </div>
+            </div>
+            <div class="dashtabs_content dashtabs_content-4" data-tab = "4">
+            </div>
+        </div>
+    </section> 
+    <script src="../js/dashBoard.js"></script>
 </body>
 </html>
