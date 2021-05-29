@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
     <!-- css -->
     <link rel="stylesheet" href="./styles.css">
 
@@ -88,15 +89,15 @@
                         <label class="form_label" for="">Encryption:</label>
                         <div class="radio_inputs">
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-1">
+                                <input class="radio_input" type="radio" name="wifi" id="radio-1">
                                 <label class="radio_label" for="radio-1">None</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <input class="radio_input" type="radio" name="wifi" id="radio-2">
                                 <label class="radio_label" for="radio-2">  WPA/WPA2</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <input class="radio_input" type="radio" name="wifi" id="radio-2">
                                 <label class="radio_label" for="radio-2">WEP</label>
                             </div>
                         </div>
@@ -183,23 +184,23 @@
                         <label class="form_label" for="">Cryptocurrency:</label>
                         <div class="radio_inputs">
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-1">
+                                <input class="radio_input" type="radio" name="Bitcoin" id="radio-1">
                                 <label class="radio_label" for="radio-1">Bitcoin</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <input class="radio_input" type="radio" name="Bitcoin" id="radio-2">
                                 <label class="radio_label" for="radio-2"> Bitcoin Cash</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-3">
+                                <input class="radio_input" type="radio" name="Bitcoin" id="radio-3">
                                 <label class="radio_label" for="radio-3">Ether</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-4">
+                                <input class="radio_input" type="radio" name="Bitcoin" id="radio-4">
                                 <label class="radio_label" for="radio-4">Litecoin</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-5">
+                                <input class="radio_input" type="radio" name="Bitcoin" id="radio-5">
                                 <label class="radio_label" for="radio-5">Dash</label>
                             </div>
                         </div>
@@ -229,11 +230,11 @@
                         <label class="form_label" for="">Choose an option:</label>
                         <div class="radio_inputs" style="width: 40%;">
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-1">
+                                <input class="radio_input" type="radio" name="facebook" id="radio-1">
                                 <label class="radio_label" for="radio-1">Post</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <input class="radio_input" type="radio" name="facebook" id="radio-2">
                                 <label class="radio_label" for="radio-2"> Profile</label>
                             </div>
                         </div>
@@ -255,14 +256,14 @@
                 <h1>Twitter QR</h1>
                 <form class="form" action="">
                     <div class="form_group">
-                        <label class="form_label" for="">Choose an option:</label>
+                        <label class="form_label">Choose an option:</label>
                         <div class="radio_inputs" style="width: 40%;">
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-1">
+                                <input class="radio_input" type="radio" name="twitter" id="radio-1">
                                 <label class="radio_label" for="radio-1">Post</label>
                             </div>
                             <div class="radio_group">
-                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <input class="radio_input" type="radio" name="twitter" id="radio-2">
                                 <label class="radio_label" for="radio-2"> Profile</label>
                             </div>
                         </div>
@@ -295,8 +296,31 @@
         <!-- Header Right -->
         <div class="header_right">
             <img class="header_right_img" src="./img/qr-code-512.png" alt="">
-            <button href=""> <p>Shape & Color</p>  <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            <button href=""> <p>Logo</p>  <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <div class="tabs">
+                  <div class="tab">
+                    <input type="checkbox" id="chck1">
+                    <label class="tab-label" for="chck1">Color</label>
+                    <div class="tab-content tab-content-1">
+                        <p>
+                            Choose any color:
+                        </p>
+                        <span>(Tap to choose)</span>
+                        <div class="color-picker"></div>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="checkbox" id="chck2">
+                    <label class="tab-label" for="chck2">Logos</label>
+                    <div class="tab-content tab-content-2">
+                        <div class="active">
+                            <img src="./img/Logo_1.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./img/Logo_2.png" alt="">
+                        </div>
+                    </div>
+                  </div>
+            </div>
             <div class="header_right-btns">
                 <button> <span><i class="fa fa-arrow-down" aria-hidden="true"></i> JPG</span></button>
                 <button> <span><i class="fa fa-arrow-down" aria-hidden="true"></i> SVG</span></button>
@@ -591,6 +615,7 @@
               </ul>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

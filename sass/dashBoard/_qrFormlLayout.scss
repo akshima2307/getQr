@@ -10,6 +10,22 @@
             display: block;
             margin: 5rem auto;
         }
+        & .form_btn{
+          display: block;
+          background: $very_dark_blue;
+          color: white;
+          border: none;
+          outline: none;
+          padding: 1rem 3rem;
+          font-size: 1.133rem;
+          font-weight: 500;
+          border-radius: 25px;
+          margin-top: 4rem;
+          cursor: pointer;
+          &:hover{
+              background: $light_dark_blue;
+          }
+        }
         & .qrname{
           position: relative;
           & > i{
