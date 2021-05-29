@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetQr</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- font Awsome -->
+    <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="qrtype_nav">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </div>
+
+    <section class="qrcontent_container">
+        <div class="qrcontent_container-left">
+            <div class="qrname">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <input type="text" placeholder="Name your Qr Code">
+            </div>
+            <div class="coupon_form">
+                <ul>
+                    <li>
+                        <input type="checkbox" >
+                        <i></i>
+                        <h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Design & Customizations</h2>
+
+                        <!-- Design & Customization -->
+                        <form action="" class="design_form">
+                            <div class="form_group">
+                                <p>Choose a color theme and upload an image for your social media page</p>
+                                <div class="form_group-color">
+                                    <label for=""><i class="fa fa-paint-brush" aria-hidden="true"></i> Color: </label>
+                                    <div class="Primary_color">
+                                        <small>Primary</small>
+                                        <span class="color-picker">
+                                            <label for="Primary">
+                                                <input type="color" value="#9231d3" id="Primary">
+                                            </label>
+                                        </span>
+                                    </div>
+                                    <div class="Primary_color">
+                                        <small>Button</small>
+                                        <span class="color-picker">
+                                            <label for="Button">
+                                                <input type="color" value="#8f3f3f" id="Button">
+                                            </label>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <p>Choose image from templates or upload an image <input type="file"></p>
+                                <div class="form_group-image">
+                                    <div>
+                                        <img src="../img/coupon.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+
+                    <!-- Basic Info -->
+                    <li>
+                        <input type="checkbox">
+                        <i></i>
+                        <h2><i class="fa fa-info-circle" aria-hidden="true"></i> Basic Information</h2>
+                        <form class="basic_info" action="">
+                            <p>Provide your company or shop name and describe your offer in few words.</p>
+                            <div class="form_group">
+                                <label for="company">Company*</label>
+                                <input type="text" value="Elle Boutique" id="company" required>
+                            </div>
+                            <div class="form_group">
+                                <label for="Headline">Headline</label>
+                                <input type="text" value="Storewide Holiday Sale." id="Headline">
+                            </div>
+                            <div class="form_group">
+                                <label for="Description">Description</label>
+                                <textarea name="" id="Description" cols="20" rows="10" >Get all of your holiday shopping done early this year! Discounted items on all designer clothing, bags, and more.</textarea>
+                            </div>
+                            <div class="form_group">
+                                <label for="percentage">Sale Badge</label>
+
+                                <select name="percentage" id="percentage">
+                                <option value="25%">25%</option>
+                                <option value="30%">30%</option>
+                                <option value="35%">35%</option>
+                                <option value="40%">40%</option>
+                                </select>
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <i></i>
+                        <h2><i class="fa fa-percent" aria-hidden="true"></i> Coupon</h2>
+                        <form action="" class="coupon_form">
+
+                        </form>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="qrcontent_container-right">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1">Preview</a></li>
+                <li class=""><a href="#tab-2">Qr Code</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active"> 
+                    <div class="phone">
+                        <div class="phone_screen">
+                            
+                        </div>
+                    </div>
+                </div> 
+                <div id="tab-2" class="tab-pane">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("load", function() {
+            // store tabs variable
+            var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+        function myTabClicks(tabClickEvent) {
+                for (var i = 0; i < myTabs.length; i++) {
+                    myTabs[i].classList.remove("active");
+                }
+                var clickedTab = tabClickEvent.currentTarget;
+                clickedTab.classList.add("active");
+                tabClickEvent.preventDefault();
+                var myContentPanes = document.querySelectorAll(".tab-pane");
+                for (i = 0; i < myContentPanes.length; i++) {
+                    myContentPanes[i].classList.remove("active");
+                }
+                var anchorReference = tabClickEvent.target;
+                var activePaneId = anchorReference.getAttribute("href");
+                var activePane = document.querySelector(activePaneId);
+                activePane.classList.add("active");
+            }
+            for (i = 0; i < myTabs.length; i++) {
+                myTabs[i].addEventListener("click", myTabClicks)
+            }
+        });
+
+    </script>
+</body>
+</html>

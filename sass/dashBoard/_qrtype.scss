@@ -2,7 +2,7 @@
     &_nav{
         height: 9vh;
         background-color: $white;
-        box-shadow: $shadow-dark;
+        box-shadow: $shadow-light;
         display: flex;
         align-items: center;
         padding-left: 2rem;
@@ -10,7 +10,8 @@
         width: 100%;
         z-index: 100;
         top: 0;
-        & > i{
+        & a{text-decoration: none;}
+        &  i{
             font-size: 1.3rem;
             cursor: pointer;
             color: $very_dark_blue;

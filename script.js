@@ -1,9 +1,9 @@
-const headerTextarea = document.querySelector('.header_textares');
-const headerPara = document.getElementById('header_para');
-headerTextarea.addEventListener('input', hidePara);
-function hidePara(){
-    headerPara.style.display = "none";
-}
+// const headerTextarea = document.querySelector('.header_textares');
+// const headerPara = document.getElementById('header_para');
+// headerTextarea.addEventListener('input', hidePara);
+// function hidePara(){
+//     headerPara.style.display = "none";
+// }
 
 function setUpTabs(){
     document.querySelectorAll('.header_left_nav-link').forEach(button => {

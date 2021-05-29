@@ -12,11 +12,11 @@
 </head>
 <body>
     <div class="qrtype_nav">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        <a href="./qrType.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
     </div>
 
-    <section class="social_container">
-        <div class="social_container-left">
+    <section class="qrcontent_container">
+        <div class="qrcontent_container-left">
             <div class="qrname">
                 <i class="fa fa-comments" aria-hidden="true"></i>
                 <input type="text" placeholder="Name your Qr Code">
@@ -176,37 +176,48 @@
                   </ul>
             </div>
         </div>
-        <div class="social_container-right">
-            <div class="phone">
-                <div class="phone_screen">
-                    <img src="../img/SL_011521_39830_13.jpg" alt="">
-                    <div class="phone_screen-header">
-                        <h3>Connect with us on social media</h3>
-                        <p>Follow us and get updates delivered to your favorite social media channel</p>
+        <div class="qrcontent_container-right">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1">Preview</a></li>
+                <li class=""><a href="#tab-2">Qr Code</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active"> 
+                    <div class="phone">
+                        <div class="phone_screen social_phone_screen">
+                            <img src="../img/SL_011521_39830_13.jpg" alt="">
+                            <div class="social_phone_screen-header">
+                                <h3>Connect with us on social media</h3>
+                                <p>Follow us and get updates delivered to your favorite social media channel</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    <div>
+                                        <p>www.your-website.com</p>
+                                        <small>Visit us online</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <div>
+                                        <p>www.facebook.com/page</p>
+                                        <small>Become a fan</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    <div>
+                                        <p>www.youtube.com/page</p>
+                                        <small>Watch our videos</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <i class="fa fa-globe" aria-hidden="true"></i>
-                            <div>
-                                <p>www.your-website.com</p>
-                                <small>Visit us online</small>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <div>
-                                <p>www.facebook.com/page</p>
-                                <small>Become a fan</small>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                            <div>
-                                <p>www.youtube.com/page</p>
-                                <small>Watch our videos</small>
-                            </div>
-                        </li>
-                    </ul>
+                </div> 
+                <div id="tab-2" class="tab-pane">
+                    <img src="../img/qrCode.png" alt="">
                 </div>
             </div>
         </div>
@@ -225,6 +236,32 @@
         targetLabel.appendChild(codeArea);
         });
         });
+    </script>
+    <script>
+        window.addEventListener("load", function() {
+            // store tabs variable
+            var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+        function myTabClicks(tabClickEvent) {
+                for (var i = 0; i < myTabs.length; i++) {
+                    myTabs[i].classList.remove("active");
+                }
+                var clickedTab = tabClickEvent.currentTarget;
+                clickedTab.classList.add("active");
+                tabClickEvent.preventDefault();
+                var myContentPanes = document.querySelectorAll(".tab-pane");
+                for (i = 0; i < myContentPanes.length; i++) {
+                    myContentPanes[i].classList.remove("active");
+                }
+                var anchorReference = tabClickEvent.target;
+                var activePaneId = anchorReference.getAttribute("href");
+                var activePane = document.querySelector(activePaneId);
+                activePane.classList.add("active");
+            }
+            for (i = 0; i < myTabs.length; i++) {
+                myTabs[i].addEventListener("click", myTabClicks)
+            }
+        });
+
     </script>
 </body>
 </html>

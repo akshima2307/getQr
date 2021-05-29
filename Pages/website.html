@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetQr</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../styles.css">
+    <!-- font Awsome -->
+    <script src="https://kit.fontawesome.com/0ccd48ad8b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="qrtype_nav">
+        <a href="./qrType.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    </div>
+
+    <section class="qrcontent_container">
+        <div class="qrcontent_container-left">
+            <div class="qrname">
+                <i class="fa fa-comments" aria-hidden="true"></i>
+                <input type="text" placeholder="Name your Qr Code">
+            </div>
+
+            <ul>
+                <li>
+                    <input type="checkbox" >
+                    <i></i>
+                    <h2><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Enter your website address</h2>
+                    <form action="" class="web_form">
+                        <p>Type in the website to link with your QR Code</p>
+                        <div class="form_group">
+                            <label for="website">Website</label>
+                            <input type="text" placeholder="http://my-website.com">
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <div class="qrcontent_container-right">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1">Preview</a></li>
+                <li class=""><a href="#tab-2">Qr Code</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane active"> 
+                    <div class="phone">
+                        <div class="phone_screen web_phone_screen">
+                            <div>
+                                <input type="text" value="http://my-website.com">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div id="tab-2" class="tab-pane">
+                    <img src="../img/qrCode.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("load", function() {
+            // store tabs variable
+            var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+        function myTabClicks(tabClickEvent) {
+                for (var i = 0; i < myTabs.length; i++) {
+                    myTabs[i].classList.remove("active");
+                }
+                var clickedTab = tabClickEvent.currentTarget;
+                clickedTab.classList.add("active");
+                tabClickEvent.preventDefault();
+                var myContentPanes = document.querySelectorAll(".tab-pane");
+                for (i = 0; i < myContentPanes.length; i++) {
+                    myContentPanes[i].classList.remove("active");
+                }
+                var anchorReference = tabClickEvent.target;
+                var activePaneId = anchorReference.getAttribute("href");
+                var activePane = document.querySelector(activePaneId);
+                activePane.classList.add("active");
+            }
+            for (i = 0; i < myTabs.length; i++) {
+                myTabs[i].addEventListener("click", myTabClicks)
+            }
+        });
+
+    </script>
+</body>
+</html>

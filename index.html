@@ -37,159 +37,65 @@
     <section class="header">
         <div class="header_left">
             <div class="header_left_nav">
-                <a class="header_left_nav-link header_left_nav-link--active" data-for-tab = "1" href="#">Text</a>
-                <a class="header_left_nav-link" data-for-tab = "2" href="#">URL</a>
-                <a class="header_left_nav-link" data-for-tab = "3" href="#">Email</a>
-                <a class="header_left_nav-link" data-for-tab = "4" href="#">Phone</a>
-                <a class="header_left_nav-link" data-for-tab = "5" href="#">SMS</a>
-                <a class="header_left_nav-link" data-for-tab = "6" href="#">VCARD</a>
-                <a class="header_left_nav-link" data-for-tab = "7" href="#">Location</a>
-                <a class="header_left_nav-link" data-for-tab = "8" href="#">Bitcoin</a>
-                <a class="header_left_nav-link" data-for-tab = "9" href="#">Wifi</a>
-                <a class="header_left_nav-link" data-for-tab = "10" href="#">Event</a>
-                <a class="header_left_nav-link"  href="#">More</a>
+                <a class="header_left_nav-link header_left_nav-link--active" data-for-tab = "1" href="#"><img src="./img/ic_outline-email.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "2" href="#"><img src="./img/fa-solid_wifi.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "3" href="#"><img src="./img/fa-regular_address-card.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "4" href="#"><img src="./img/ant-design_file-text-outlined.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "5" href="#"><img src="./img/Vector.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "6" href="#"><img src="./img/uil_bitcoin-circle.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "7" href="#"><img src="./img/eva_facebook-outline.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "8" href="#"><img src="./img/eva_twitter-outline.svg" alt=""></a>
+                <a class="header_left_nav-link" data-for-tab = "9" href="#"><img src="./img/bi_phone.svg" alt=""></a>
+                <!-- <a class="header_left_nav-link" data-for-tab = "10" href="#"><img src="./img/entypo_dots-three-horizontal.svg" alt=""></a> -->
             </div>
 
             <!-- Tab 1 -->
             <div class="header_left-content tab_content tab_content--active" data-tab = "1">
-                <div class="header_left-content-top">
-                    <textarea class="header_textares" autofocus name="" id="" placeholder="Enter Your Text Here"></textarea>
-                    <p id="header_para">Qr code will be generated automatically</p>
-                </div>
-                <div class="header_left-content-bottom">
-                    <i class="fa fa-upload" aria-hidden="true"></i>
-                    <p>Upload any file (.jpg, .pdf, .mp3, .docx, .pptx)</p>
-                </div>
-
-                <div class="header_left-toggle">
-                    <div class="toggle-button">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                        <div>
-                            <span>Static</span>
-                            <small>Fixed Destination URL</small>
-                        </div>
+                
+                <h1>Email QR Code</h1>
+                <form class="form" action="">
+                    <div class="form_group">
+                        <label class="form_label" for="">Email:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="Your Email Id">
                     </div>
-                    <div class="toggle-button toggle-button-2">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                        <div>
-                            <span>Dynamic & Trackebale</span>
-                            <small>Modifield Destination URL</small>
-                        </div>
-                    </div>                
-                </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Subject:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="Enter the subject">
+                    </div>
+                    <div class="form_group" style="align-items: flex-start;">
+                        <label class="form_label" for="">Message:</label>
+                        <textarea class="form_textarea" rows="4" cols="50" placeholder="Enter your message"></textarea>
+                    </div> 
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
+                
             </div>
 
 
             <!-- Tab 2 -->
             <div class="tab_content tab_content-2" data-tab = "2">
-                <h1>Image Gallery QR Code</h1>
-                <p>Share a series of images about your products, company or events.</p>
-                <button>Sign up for free</button>
-            </div>
-
-            <!-- Tab 3 -->
-            <div class="tab_content tab_content-3" data-tab = "3">
-                <h1>PDF QR Code</h1>
-                <p>Display brochure, magazine, catalog, ebook, or any other PDF files.</p>
-                <button>Sign up for free</button>
-            </div>
-
-            <!-- Tab 4 -->
-            <div class="tab_content tab_content-4" data-tab = "4">
-                <h1>Email QR Code</h1>
-                <form class="form" action="">
-                    <div class="form_group">
-                        <label class="form_label" for="">Email:</label>
-                        <input class="form_input" type="text" name="" id="" placeholder="Your Email">
-                    </div>
-                    <div class="form_group">
-                        <label class="form_label" for="">Subject:</label>
-                        <input class="form_input" type="text" name="" id="" placeholder="Enter email subject">
-                    </div>
-                    <div class="form_group" style="align-items: flex-start;">
-                        <label class="form_label" for="">Subject:</label>
-                        <textarea class="form_textarea" type="text" name="" id="" placeholder="Enter your message">
-                        </textarea>
-                    </div> 
-                    <button class="form_btn">Genrate QR Code</button>
-                </form>
-            </div>
-
-            <!-- Tsb-5 -->
-            <div class="tab_content tab_content-5" data-tab = "5">
-                <h1>SMS QR Code</h1>
-                <form class="form" action="">
-                    <div class="form_group">
-                        <label class="form_label" for="">Phone:</label>
-                        <input class="form_input" type="number" name="" id="" placeholder="Your phone number">
-                    </div>
-                    <div class="form_group" style="align-items: flex-start;">
-                        <label class="form_label" for="">Message:</label>
-                        <textarea class="form_textarea" type="text" name="" id="" placeholder="Enter your message">
-                        </textarea>
-                    </div> 
-                    <button class="form_btn">Genrate QR Code</button>
-                </form>
-            </div>
-
-            <!-- Tab-6 -->
-            <div class="header_left-content tab_content tab_content-6" data-tab = "6">
-                <div class="header_left-content-top">
-                    <textarea class="header_textares" autofocus name="" id="" placeholder="Enter Your Website Here"></textarea>
-                    <p id="header_para">Qr code will be generated automatically</p>
-                </div>
-                <div class="header_left-content-bottom">
-                    <i class="fa fa-upload" aria-hidden="true"></i>
-                    <p>Upload any file (.jpg, .pdf, .mp3, .docx, .pptx)</p>
-                </div>
-
-                <div class="header_left-toggle">
-                    <div class="toggle-button">
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                        <div>
-                            <span>Scan Tracking</span>
-                        </div>
-                    </div>     
-                </div>
-            </div>
-
-            <!-- Tab-7 -->
-            <div class="tab_content tab_content-7" data-tab = "7">
                 <h1>WiFi QR Code</h1>
                 <form action="" class="form">
                     <div class="form_group">
-                        <label class="form_label" for="">Network Name:</label>
-                        <input class="form_input" type="text" name="" id="" placeholder="SSID">
+                        <label class="form_label" for="">WiFi Id:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="Enter your SSID or the User name">
                     </div>
                     <div class="form_group">
                         <label class="form_label" for="">Password:</label>
-                        <input class="form_input" type="password" name="" id="">
-                    </div>
-                    <div class="form_group">
-                        <label class="form_label" for="">Message:</label>
-                        <input class="form_input" type="text" name="" id="" placeholder="Optional">
+                        <input class="form_input" type="password" name="" id="" placeholder="Enter the wifi password">
                     </div>
                     <div class="form_group">
                         <label class="form_label" for="">Encryption:</label>
                         <div class="radio_inputs">
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-1">
                                 <label class="radio_label" for="radio-1">None</label>
                             </div>
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-2">
                                 <label class="radio_label" for="radio-2">  WPA/WPA2</label>
                             </div>
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-2">
                                 <label class="radio_label" for="radio-2">WEP</label>
                             </div>
@@ -199,30 +105,100 @@
                 </form>
             </div>
 
-            <!-- Tab-8 -->
-            <div class="tab_content tab_content-8" data-tab = "8">
+            <!-- Tab 3 -->
+            <div class="tab_content tab_content-3" data-tab = "3">
+                <h1>VCard QR Code</h1>
+                <form action="" class="form">
+                    <div class="form_group">
+                        <label class="form_label" for="">Name:</label>
+                        <input class="form_input" style="width: 40%;" type="text" name="" id="" placeholder="Enter your first name">
+                        <input class="form_input" style="width: 40%;"  type="text" name="" id="" placeholder="Enter your last name">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Contact:</label>
+                        <input class="form_input" style="width: 40%;" type="text" name="" id="" placeholder="Enter your Phone number">
+                        <input class="form_input" style="width: 40%;" type="text" name="" id="" placeholder="Enter your Fax">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Email:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="Your Email Id">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Company:</label>
+                        <input class="form_input" style="width: 40%;" type="text" name="" id="" placeholder="Company name">
+                        <input class="form_input" style="width: 40%;" type="text" name="" id="" placeholder="Enter your role">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Address:</label>
+                        <textarea class="form_textarea" type="text" name="" id="" placeholder="Enter your message">
+                        </textarea>
+                    </div> 
+                    <div class="form_group">
+                        <label class="form_label" for="">ZIP Code:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="Enter your ZIP Code">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">State:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="State">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Country:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="Your Email Id">
+                    </div>
+                    <div class="form_group">
+                        <label class="form_label" for="">Website:</label>
+                        <input class="form_input" type="text" name="" id="" placeholder="www.my-website.com">
+                    </div>
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
+            </div>
+
+            <!-- Tab 4 -->
+            <div class="tab_content tab_content-4" data-tab = "4">
+                <h1>Text QR Code</h1>
+                <form action="">
+                    <input type="text" placeholder="Enter the text that you want to show">
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
+            </div>
+
+            <!-- Tsb-5 -->
+            <div class="tab_content tab_content-5" data-tab = "5">
+                <h1>URL QR Code</h1>
+                <form action="">
+                    <input type="text" placeholder="Enter URL here">
+                    <div class="header_left-content-bottom">
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        <p>Upload any file (.jpg, .pdf, .mp3, .docx, .pptx)</p>
+                    </div>
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
+            </div>
+
+            <!-- Tab-6 -->
+            <div class="tab_content tab_content-6" data-tab = "6">
                 <h1>Bitcoin QR Code</h1>
                 <form class="form" action="">
                     <div class="form_group">
                         <label class="form_label" for="">Cryptocurrency:</label>
                         <div class="radio_inputs">
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-1">
                                 <label class="radio_label" for="radio-1">Bitcoin</label>
                             </div>
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-2">
                                 <label class="radio_label" for="radio-2"> Bitcoin Cash</label>
                             </div>
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-3">
                                 <label class="radio_label" for="radio-3">Ether</label>
                             </div>
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-4">
                                 <label class="radio_label" for="radio-4">Litecoin</label>
                             </div>
-                            <div class="radio_input">
+                            <div class="radio_group">
                                 <input class="radio_input" type="radio" name="" id="radio-5">
                                 <label class="radio_label" for="radio-5">Dash</label>
                             </div>
@@ -242,6 +218,73 @@
                     </div>
                     <button class="form_btn">Genrate QR Code</button>
                 </form>
+                
+            </div>
+
+            <!-- Tab-7 -->
+            <div class="tab_content tab_content-7" data-tab = "7">
+                <h1>Facebook QR</h1>
+                <form class="form" action="">
+                    <div class="form_group">
+                        <label class="form_label" for="">Choose an option:</label>
+                        <div class="radio_inputs" style="width: 40%;">
+                            <div class="radio_group">
+                                <input class="radio_input" type="radio" name="" id="radio-1">
+                                <label class="radio_label" for="radio-1">Post</label>
+                            </div>
+                            <div class="radio_group">
+                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <label class="radio_label" for="radio-2"> Profile</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group" style="align-items: flex-start;">
+                        <label class="form_label" for="">Text:</label>
+                        <textarea class="form_textarea" rows="4" cols="50" placeholder="Enter your article"></textarea>
+                    </div> 
+                    <div class="header_left-content-bottom">
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        <p>Upload any file (.jpg, .pdf, .mp3, .docx, .pptx)</p>
+                    </div>
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
+            </div>
+
+            <!-- Tab-8 -->
+            <div class="tab_content tab_content-8" data-tab = "8">
+                <h1>Twitter QR</h1>
+                <form class="form" action="">
+                    <div class="form_group">
+                        <label class="form_label" for="">Choose an option:</label>
+                        <div class="radio_inputs" style="width: 40%;">
+                            <div class="radio_group">
+                                <input class="radio_input" type="radio" name="" id="radio-1">
+                                <label class="radio_label" for="radio-1">Post</label>
+                            </div>
+                            <div class="radio_group">
+                                <input class="radio_input" type="radio" name="" id="radio-2">
+                                <label class="radio_label" for="radio-2"> Profile</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group" style="align-items: flex-start;">
+                        <label class="form_label" for="">Text:</label>
+                        <textarea class="form_textarea" rows="4" cols="50" placeholder="Enter your article"></textarea>
+                    </div> 
+                    <div class="header_left-content-bottom">
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                        <p>Upload any file (.jpg, .pdf, .mp3, .docx, .pptx)</p>
+                    </div>
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
+            </div>
+            <!-- Tab-9 -->
+            <div class="tab_content tab_content-9" data-tab = "9">
+                <h1>App store QR Code</h1>
+                <form action="">
+                    <input type="text" placeholder="Link your app in Apple App Store, Google Play Store, or Amazon Appstore on one page.">
+                    <button class="form_btn">Genrate QR Code</button>
+                </form>
             </div>
         </div>
 
@@ -251,27 +294,52 @@
 
         <!-- Header Right -->
         <div class="header_right">
-            <img class="header_right_img" src="https://mysteryqr.com/wp-content/uploads/2020/10/home-page-campaign-qr-code-white-210x300.png" alt="">
+            <img class="header_right_img" src="./img/qr-code-512.png" alt="">
             <button href=""> <p>Shape & Color</p>  <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             <button href=""> <p>Logo</p>  <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-            <div class="qr-code_container">
-                <i class="fa fa-qrcode" aria-hidden="true"></i>
-                <i class="fa fa-qrcode" aria-hidden="true"></i>
-                <i class="fa fa-qrcode" aria-hidden="true"></i>
-                <i class="fa fa-qrcode" aria-hidden="true"></i>
+            <div class="header_right-btns">
+                <button> <span><i class="fa fa-arrow-down" aria-hidden="true"></i> JPG</span></button>
+                <button> <span><i class="fa fa-arrow-down" aria-hidden="true"></i> SVG</span></button>
             </div>
-            <div class="toggle-button toggle-button-3">
-                <label class="switch switch-2">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-                <div>
-                    <p>Scan Tracking</p>
+        </div>
+    </section>
+
+    <!-- info-2 -->
+    <section class="info-2">
+        <h1>GET MORE WITH GET-QR</h1>
+        <p>Single place for your all QR Code marketing campaigns where you can create, track and edit all your QR codes.</p>
+        <div class="info-2_container">
+            <div class="info-2_div">
+                <div class="info-2_div-content">
+                    <h3>Change the campaign not the code.</h3>
+                    <p>Add editable and trackable QR Codes on anything you want with full branding and customization features.</p>
+                    <span>At the right time</span>
+                    <p>Send timely campaign that increase engagement. For eg, a contactless dynamic QR menu that triggers breakfast offers in the morning and lunch offers at noon.</p>
+                    <span>Stay updated - always</span>
+                    <p>Changing number or need to update contact details linked to your QR Code? With dynamic QR Codes, edit all the information - quick and hassle-free.</p>
+                </div>
+                <div class="info-2_div-img info-2_div-img-1">
+                    &nbsp;
                 </div>
             </div>
-            <div class="header_right-btns">
-                <button>JPG</button>
-                <button>SVG</button>
+            <div class="info-2_div">
+                <div class="info-2_div-img info-2_div-img-2">
+                    &nbsp;
+                </div>
+                <div class="info-2_div-content">
+                    <h3>Create your Custom QR with your logo</h3>
+                    <p>Enter the endless customization options! You can personalize your QR Code with your own logo, branded colors, multiple shapes.</p>
+                </div>
+            </div>
+            <div class="info-2_div">
+                <div class="info-2_div-content">
+                    <h3>Really know your customers</h3>
+                    <p>1. Get it right with data, Use our build-in intelligence or connect the dynamic Qr Code Generator and analysis to uncover user insight. Drive better result with data-driven iterations.</p>
+                    <p>2. Develop a deep understanding of your customers spending time on specific QR Code, their demographics and various other key Performance indicators(KPIs).</p>
+                </div>
+                <div class="info-2_div-img info-2_div-img-3">
+                    &nbsp;
+                </div>
             </div>
         </div>
     </section>
@@ -521,46 +589,6 @@
                   <p>Once generated, a Static Code can not be edited and its scans cannot be tracked. Dynamic Code, on the other hand, is very flexible and is virtually indestructible. You can update its content, change/add links, and fix typos even after printing. You can also track the number of scans. including where and when.</p>
                 </li>
               </ul>
-        </div>
-    </section>
-
-    <!-- info-2 -->
-    <section class="info-2">
-        <h1>GET MORE WITH GET-QR</h1>
-        <p>Single place for your all QR Code marketing campaigns where you can create, track and edit all your QR codes.</p>
-        <div class="info-2_container">
-            <div class="info-2_div">
-                <div class="info-2_div-content">
-                    <h3>Change the campaign not the code.</h3>
-                    <p>Add editable and trackable QR Codes on anything you want with full branding and customization features.</p>
-                    <span>At the right time</span>
-                    <p>Send timely campaign that increase engagement. For eg, a contactless dynamic QR menu that triggers breakfast offers in the morning and lunch offers at noon.</p>
-                    <span>Stay updated - always</span>
-                    <p>Changing number or need to update contact details linked to your QR Code? With dynamic QR Codes, edit all the information - quick and hassle-free.</p>
-                </div>
-                <div class="info-2_div-img info-2_div-img-1">
-                    &nbsp;
-                </div>
-            </div>
-            <div class="info-2_div">
-                <div class="info-2_div-img info-2_div-img-2">
-                    &nbsp;
-                </div>
-                <div class="info-2_div-content">
-                    <h3>Create your Custom QR with your logo</h3>
-                    <p>Enter the endless customization options! You can personalize your QR Code with your own logo, branded colors, multiple shapes.</p>
-                </div>
-            </div>
-            <div class="info-2_div">
-                <div class="info-2_div-content">
-                    <h3>Really know your customers</h3>
-                    <p>1. Get it right with data, Use our build-in intelligence or connect the dynamic Qr Code Generator and analysis to uncover user insight. Drive better result with data-driven iterations.</p>
-                    <p>2. Develop a deep understanding of your customers spending time on specific QR Code, their demographics and various other key Performance indicators(KPIs).</p>
-                </div>
-                <div class="info-2_div-img info-2_div-img-3">
-                    &nbsp;
-                </div>
-            </div>
         </div>
     </section>
     <script src="./script.js"></script>

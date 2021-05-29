@@ -1,50 +1,45 @@
 .header{
-    height: 90vh;
-    padding: 4rem 3rem;
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    @media(min-height: 900px){
-        height: 85vh;
-        padding: 3rem;
+    align-items: flex-start;
+    border-radius: 63px;
+    box-shadow: $shadow-dark;
+    @media(min-width: 1600px){
+        margin: 4rem 10rem;
+        margin-top: 1rem;
     }
     &_left{
+        
         width: 65%;
-        height: 100%;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
 
         &_nav{
-            width: 100%;
+            height: 36rem;
+            width: 9%;
             padding: 1rem 2rem;
             border-radius: 50px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             background: $very_dark_blue;
             box-shadow: $shadow-light;
-            @media(min-height: 900px){
-                padding: 1.5rem;
-            }
+            
             &-link{
                 text-decoration: none;
                 color: $white;
                 font-size: 1.2rem;
                 font-weight: 500;
-                @media(min-height: 900px){
-                    font-size: 1.5rem;
-                }
+                & > img{width: 1.7rem;}
                 &--active{
                     background: $white;
                     color: $very_dark_blue;
                     padding: 0.5rem 1rem;
                     border-radius: 30px;
                     font-size: 1rem;
-                    @media(min-height: 900px){
-                        font-size: 1.7rem;
-                    }
                 }
             }
         }
@@ -52,7 +47,6 @@
         &-content{
             text-align: center;
             width: 80%;
-            height: 75%;
             &-top{
                 position: relative;
                 height: 15rem;
@@ -60,9 +54,6 @@
                 padding-left: 2rem;
                 border-radius: 12px;
                 border: 1px solid $very-dark-blue;
-                @media(min-height: 900px){
-                    height: 20rem;
-                }
                 & > textarea{
                     font-family: 'Raleway', sans-serif;
                     font-size: 3rem;
@@ -77,27 +68,11 @@
                     font-size: 3rem;
                     color: $very-dark-blue;
                     letter-spacing: 3px;
-                    @media(min-height: 900px){
-                        font-size: 3.5rem;
-                    }
-                }
-                & > p{
-                    position: absolute;
-                    top: 43%;
-                    left: 21%;
-                    transform: translate(-43%, -21%);
-                    color: $very-dark-blue;
-                    padding-top: 0.5rem;
-                    font-size: 1.2rem;
-                    @media(min-height: 900px){
-                        font-size: 1.3rem;
-                    }
                 }
             }
             &-bottom{
                 margin-top: 0.7rem;
                 display: flex;
-                justify-content: center;
                 align-items: center;
 
                 & > i{
@@ -106,63 +81,28 @@
                     background: white;
                     padding: 1rem;
                     border-radius: 50px;
+                    box-shadow: 0 3px 4px;
                 } 
                 & > p{
                     color: $dark-blue;
                     font-size: 1.1rem;
                     letter-spacing: 0.3px;
-                    @media(min-height: 900px){
-                        font-size: 1.4rem;
-                    }
-                }
-            }
-        }
-        &-toggle{
-            margin-top: 3rem;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            @media(min-height: 900px){
-                width: 80%;
-            }
-            & > div > div:last-of-type{
-                margin-left: 0.6rem;
-                text-align: left;
-                & > span{
-                    font-size: 1.2rem;
-                    color: $very_dark_blue;
-                    font-weight: 500;
-                    line-height: 30px;
-                    @media(min-height: 900px){
-                        font-size: 1.4rem;
-                    }
-                }
-                & > small{
-                    font-size: 1.1rem;
-                    color: $dark_blue;
-                    font-weight: 400;
-                    display: block;
-                    @media(min-height: 900px){
-                        font-size: 1.3rem;
-                    }
                 }
             }
         }
 
+
     }
     &_right{
+        height: 36rem;
         padding: 3rem 0;
         border-radius: 16px;
         background: $very_dark_blue;
-        width: 30%;
-        height: 110%;
+        width: 28%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        @media(min-height: 900px){
-            height: 105%;
-        }
         &_img{
             width: 15rem;
             height: 12rem;
@@ -180,9 +120,6 @@
             color: white;
             border-radius: 12px;
             font-size: 1rem;
-            @media(min-height: 900px){
-                font-size: 1.3rem;
-            }
             & > i {
                 transform: rotate(90deg);
             }
@@ -213,20 +150,18 @@
         }
         &-btns{
             width: 80%;
-            width: 80%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             & > button{
-                padding: 1rem 2.5rem;
+                padding: 1rem 2rem;
                 border: none;
                 outline: none;
                 cursor: pointer;
-                border-radius: 30px;
-                font-size: 1.1rem;
-                @media(min-height: 900px){
-                    padding: 1.3rem 3.5rem;
-                }
+                border-radius: 32px;
+                color: white;
+                & > span{
+                    font-size: 1.3rem;}
                 &:first-child{
                     background: $yellow;
                 }
@@ -239,87 +174,19 @@
 }
 
 
-// Toggle btn
-.toggle-button{
-    display: flex;
-    align-items: center;
-}
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-.switch-2{
-    width: 40px;
-    height: 25px;
-}
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $white;
-    transition: .4s;
-    border: 2px solid $very_dark_blue;
-  }
-  .switch-2 > .slider{
-    border: 2px solid $light_dark_blue;
-  }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 2px;
-    bottom: 2px;
-    transition: .4s;
-    background: $very_dark_blue;
-  }
-.switch-2 > .slider::before{
-    height: 15px;
-    width: 15px;
-    background: $light_dark_blue;
-}
-  
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-.switch-2 > input:checked + .slider:before {
-    transform: translateX(15px);
-}
-  
-.slider.round {
-    border-radius: 34px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
-}
 
 .tab_content{
-    height: 80%;
-    width: 100%;
+    width: 80%;
     display: none !important;
-    @media(min-height: 900px){
-        height: 75%;
-    }
     &--active{
         display: block !important;
     }
 
     // form
     & > h1{
-        font-size: 2.4rem;
+        padding-top: 2rem;
+        font-size: 3rem;
+        text-align: left;
         font-weight: 600;
         color: $very_dark_blue;
     }
@@ -330,39 +197,45 @@ input:checked + .slider:before {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 1.5rem;
     }
     .form_label{
         font-size: 1.2rem;
         font-weight: 600;
-        color: #3d3d3d;
+        color: $very_dark_blue;
     }
     .form_input{
         width: 70%;
         padding: 1rem;
         font-size: 1.2rem;
-        border: none;
+        border-radius: 12px;
+        border: 2px solid $dark_blue;
         outline: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .form_textarea{
+        font-family: inherit;
         width: 70%;
         height: 6rem;
         padding: 1rem;
+        border-radius: 12px;
+        border: 2px solid $dark_blue;
         font-size: 1.2rem;
-        border: none;
         outline: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .form_btn{
+        display: block;
         background: $very_dark_blue;
         color: white;
         border: none;
         outline: none;
         padding: 1rem 3rem;
-        font-size: 1.1rem;
+        font-size: 1.133rem;
         font-weight: 500;
-        border-radius: 12px;
-        margin-top: 2rem;
+        border-radius: 25px;
+        margin-top: 4rem;
         cursor: pointer;
         &:hover{
             background: $light_dark_blue;
@@ -372,77 +245,66 @@ input:checked + .slider:before {
         width: 70%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .radio_group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .radio_input{
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-right: 0.4rem;
     }
     .radio_label{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
-    &-2{
-        & > h1{
-            font-size: 3rem;
-            font-weight: 600;
-            color: $very_dark_blue;
+    &-4{
+        margin: auto;
+        margin-top: 7rem;
+        & h1{
+            font-size: 3.5rem;
         }
-        & > p{
-            font-size: 1.4rem;
-            color: $very_dark_blue;
-            display: block;
-            margin-top: 1rem;
-        }
-        & > button{
-            background: $very_dark_blue;
-            color: white;
-            border: none;
+        & input{
+            padding-left: 0.5rem;
+            margin: 2rem 0;
+            background: transparent;
             outline: none;
-            padding: 1rem 3rem;
-            font-size: 1.1rem;
-            font-weight: 500;
-            border-radius: 5px;
-            margin-top: 6rem;
-            cursor: pointer;
-            &:hover{
-                background: $light_dark_blue;
-            }
-        }
-    }
-    // Tab-3
-    &-3{
-        & > h1{
-            font-size: 3rem;
-            font-weight: 600;
-            color: $very_dark_blue;
-        }
-        & > p{
+            border: none;
             font-size: 1.3rem;
-            color: $very_dark_blue;
-            display: block;
-            margin-top: 1rem;
-        }
-        & > button{
-            background: $very_dark_blue;
-            color: white;
-            border: none;
-            outline: none;
-            padding: 1rem 3rem;
-            font-size: 1.1rem;
-            font-weight: 500;
-            border-radius: 5px;
-            margin-top: 6rem;
-            cursor: pointer;
-            &:hover{
-                background: $light_dark_blue;
-            }
         }
     }
-
-    // Tab-8
-    
-
-    // Tab 9
-    &-8{
-        & > h1{
-            font-size: 2.4rem;
-            font-weight: 600;
-            color: $very_dark_blue;
+    &-5{
+        margin: auto;
+        margin-top: 7rem;
+        & h1{
+            font-size: 3.5rem;
+        }
+        & input{
+            padding-left: 0.5rem;
+            margin: 2rem 0;
+            background: transparent;
+            outline: none;
+            border: none;
+            font-size: 1.3rem;
+        }
+    }
+    &-9{
+        margin: auto;
+        margin-top: 7rem;
+        & h1{
+            font-size: 3.5rem;
+        }
+        & input{
+            padding-left: 0.5rem;
+            margin: 2rem 0;
+            background: transparent;
+            outline: none;
+            border: none;
+            font-size: 1.3rem;
         }
     }
 }
